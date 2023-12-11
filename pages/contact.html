@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Suellen Reis">
+    <meta name="keywords" content="HTML, CSS, Webdesign, profile, website">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="icon" href="/images/favicon.png" type="image">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <!-- Website logo image with inline css style -->
+    <a href="/index.html"><img src="/images/logo.png" alt="Book and Hook logo"
+            style="width: 20%; height: auto; margin-bottom: 30px; margin-top: 20px;">
+    </a>
+
+    <!-- Header and Navigation Bar -->
+    <header id="pageTop">
+        <nav id="navBar">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- Html contact form -->
+        <section class="form-container">
+            <h2>Contact Us</h2>
+            <Form>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fname" name="fullname" placeholder="Enter Your Full Name"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" placeholder="Enter your Email"><br>
+                <label for="phone">Phone Number</label><br>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number"><br>
+                <p style="text-align:left ;">Please select how you would like to be contact:</p>
+                <input type="radio" id="c-email" name="message" value="c-email">
+                <label for="text">Email</label><br>
+                <input type="radio" id="c-phone" name="message" value="c-phone">
+                <label for="text">Phone</label><br>
+                <br>
+                <label id="label-message" for="txt">Message</label><br>
+                <textarea type="text" id="message" name="txtarea" id="txt" cols="30" rows="10" >Message</textarea><br>
+                <input type="submit" value="Submit" onclick="alert('Thank you for contact us!')">
+        
+            </Form>
+        </section>
+
+        <!-- Onclick event go back to top of the page -->
+        </section>
+        <input class="goToTop" type="button" value="Back to Top" onclick="window.location.href='#pageTop'">
+        <section>
+
+    </main>
+
+    <!-- Footer html -->
+
+    <footer>
+        <p>Copyright&#169 2023 Suellen Reis</p>
+    </footer>
+
+
+</body>
+
+</html>

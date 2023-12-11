@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Suellen Reis">
+    <meta name="keywords" content="HTML, CSS, Webdesign, profile, website">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="icon" href="/images/favicon.png" type="image">
+    <title>Books</title>
+
+    <!-- INTERNAL CSS FOR THE BOOK PAGE STYLE -->
+    <style>
+        /* Page Sections Style */
+        section {
+            margin-top: 50px;
+            color: black;
+        }
+
+        /* Page headings 2 style */
+        h2 {
+            color: black;
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        /* Table Style */
+        #booksTable {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+        }
+
+        /* Table data row and heading style */
+        #booksTable td, #booksTable th {
+            border: 1px solid transparent;
+            padding: 10px;
+            width: 25%;
+        }
+
+        /* Table data row style */
+        #booksTable td {
+            font-size: 120%;
+        }
+
+        /* Table data row style */
+        #booksTable tr:nth-child(even) {
+            background-color: #fbff7c;
+        }
+
+        /* Table Head row style */
+        #booksTable thead tr {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            background-color: #ffc60b;
+            color: black;
+        }
+
+        #booksTable thead tr:hover {
+            background-color: #ff8b00;
+        }
+
+        /* Table Body class style to hide rows */
+        .tbB1{
+            display: none;
+        }
+
+        .tbChild img {
+            width: 35%;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Website logo image with inline css style -->
+    <a href="/index.html"><img src="/images/logo.png" alt="Book and Hook logo"
+            style="width: 20%; height: auto; margin-bottom: 30px; margin-top: 20px;">
+    </a>
+
+    <!-- Header and Navigation Bar -->
+    <header id="pageTop">
+        <nav id="navBar">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+    
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- First Table: 2023 Books -->
+        <section class="sctn-table">
+            <h2>5 Books You Must Read in 2023</h2>
+            
+            <table id="booksTable">
+                <!-- Onclick event connect to javascript to show and hide table rows -->
+                <thead onclick="showHide('bodyHide1')">
+                    <tr class="tbParent">
+                        <th>Cover</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                    
+                <tbody id="bodyHide1" class="tbB1">
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;" ><a href="https://www.amazon.ca/Age-Vice-Novel-Deepti-Kapoor/dp/1443462047"><img src="/images/ageOfVice.jpg" alt="Age of Vice Cover"><br>Image Credit: @Amazon.ca</a></td>
+                        <td>Age of Vice</td>
+                        <td>Deepti Kapoor</td>
+                        <td>2023</td>
+                    </tr>
+                
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/Survivalists-Novel-Kashana-Cauley/dp/1593767277"><img src="/images/survivalists.jpg" alt="The Survivalists Cover"><br>Image Credit: @Amazon.ca</a></td>
+                        <td>The Survivalists</td>
+                        <td>Kashana Cauley</td>
+                        <td>2023</td>
+                    </tr>
+                
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/All-Dangerous-Things-Stacy-Willingham/dp/1250803853"><img src="/images/dangerousThings.jpg" alt="All the Dangerous Things Cover"><br>Image Credit: @Amazon.ca</a></td>
+                        <td>All the Dangerous Things</td>
+                        <td>Stacy Willingham</td>
+                        <td>2023</td>
+                    </tr>
+
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/Sam-Novel-Allegra-Goodman/dp/059359682X"><img src="/images/sam.jpg" alt="Sam Cover"><br>Image Credit: @Amazon.ca</a></td>
+                        <td>Sam</td>
+                        <td>Allegra Goodman</td>
+                        <td>2023</td>
+                    </tr>
+                
+                    <tr class="tbChild">
+                        <td><a href="https://www.amazon.ca/Have-Some-Questions-You-Novel/dp/0593490142"><img src="/images/questionsForYou.jpg" alt="I Have Some Questions for You Cover"><br>Image Credit: @Amazon.ca</a></td>
+                        <td>I Have Some Questions for You</td>
+                        <td>Rebecca Makkai</td>
+                        <td>2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Second Table: Brazilian Books -->
+        <section class="sctn-table">
+            <h2><a href="https://en.wikipedia.org/wiki/Flag_of_Brazil#/media/File:Flag_of_Brazil.svg"><img src="/images/brazilFlag.png" alt="Brazil Flag" style="width: 28px;"></a> 
+            5 Brazilian Books You Must Read</h2>
+        
+            <table id="booksTable">
+                <!-- Onclick event connect to javascript to show and hide table rows -->
+                <thead onclick="showHide('bodyHide2')">
+                    <tr class="tbParent">
+                        <th>Cover</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+        
+                <tbody id="bodyHide2" class="tbB1">
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/Dom-Casmurro-Novel-Machado-Assis/dp/0374523037"><img src="/images/domCasmurro.jpg" alt="Dom Casmurro Cover"><br>@Amazon.ca</td>
+                        <td>Dom Casmurro</td>
+                        <td>Machado de Assis</td>
+                        <td>1899</td>
+                    </tr>
+        
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/Alchemist-10th-Anniversary-Paulo-Coelho/dp/0061122416"><img src="/images/alchemist.jpg" alt="The Alchemist Cover"><br>@Amazon.ca</a></td>
+                        <td>The Alchemis</td>
+                        <td>Paulo Coelho</td>
+                        <td>1988</td>
+                    </tr>
+        
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/Posthumous-Memoirs-Br%C3%A1s-Cubas/dp/0143135031"><img src="/images/memoirsBrasCubas.jpg" alt="The Posthumous Memoirs of Brás Cubas Cover"><br>@Amazon.ca</a></td>
+                        <td>Posthumous Memoirs of Brás Cubas</td>
+                        <td>Machado de Assis</td>
+                        <td>1881</td>
+                    </tr>
+        
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/Barren-Lives-Graciliano-Ramos/dp/0292701330"><img src="/images/barrenLives.jpg" alt="Barren Lives Cover"><br>@Amazon.ca</a></td>
+                        <td>Barren Lives</td>
+                        <td>Graciliano Ramos</td>
+                        <td>1938</td>
+                    </tr>
+        
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/Hour-Star-100th-Anniversary/dp/081123004X"><img src="/images/hourStar.jpg" alt="The Hour of the Star Cover"><br>@Amazon.ca</a></td>
+                        <td>The Hour of the Star</td>
+                        <td>Clarice Lispector</td>
+                        <td>1977</td>
+                    </tr>
+                </tbody>
+            </table>        
+        </section>
+
+        <!-- Third Table: Canadian Books -->
+        <section class="sctn-table">
+            <h2><a href="https://en.wikipedia.org/wiki/Flag_of_Canada#/media/File:Flag_of_Canada_(Pantone).svg"><img src="/images/canadaFlag.png" alt="Canada Flag" style="width: 28px;"></a> 5 Canadian Books You Must Read</h2>
+        
+            <table id="booksTable">
+                <!-- Onclick event connect to javascript to show and hide table rows -->
+                <thead onclick="showHide('bodyHide3')">
+                    <tr class="tbParent">
+                        <th>Cover</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+        
+                <tbody id="bodyHide3" class="tbB1">
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/Anne-Green-Gables-Lucy-Montgomery/dp/1840227842"><img src="/images/anneGreenGables.jpg" alt="Anne of Green Gables Cover"><br>@Amazon.ca</a></td>
+                        <td>Anne of Green Gables</td>
+                        <td>Lucy Maud Montgomery</td>
+                        <td>1908</td>
+                    </tr>
+        
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/Handmaids-Tale-Margaret-Atwood/dp/1480560103"><img src="/images/handmaidsTale.jpg" alt="The Handmaid's Tale Cover"><br>@Amazon.ca</a></td>
+                        <td>The Handmaid's Tale</td>
+                        <td>Margaret Atwood</td>
+                        <td>1985</td>
+                    </tr>
+        
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/Stone-Angel-Penguin-Modern-Classics/dp/073525284X"><img src="/images/stoneAngel.jpg" alt="The Stone Angel Cover"><br>@Amazon.ca</a></td>
+                        <td>The Stone Angel</td>
+                        <td>Margaret Laurence</td>
+                        <td>1964</td>
+                    </tr>
+        
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/Life-Pi-Yann-Martel-2003-05-01/dp/B01FKUQ6IY"><img src="/images/lifeOfPi.jpg" alt="Life of Pi Cover"><br>@Amazon.ca</a></td>
+                        <td>Life of Pi</td>
+                        <td>Yann Martel</td>
+                        <td>2001</td>
+                    </tr>
+        
+                    <tr class="tbChild">
+                        <td style="font-size: 90%;"><a href="https://www.amazon.ca/Wars-Penguin-Modern-Classics/dp/0735234620"><img src="/images/wars.jpg" alt="The Wars Cover"><br>@Amazon.ca</a></td>
+                        <td>The Wars</td>
+                        <td>AAATimothy FindleyA</td>
+                        <td>1977</td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <!-- Onclick event go back to top of the page -->
+    </section>
+    <input class="goToTop" type="button" value="Back to Top" onclick="window.location.href='#pageTop'">
+    <section>
+
+    </main>
+
+    <!-- Footer html -->
+
+    <footer>
+        <p>Copyright&#169 2023 Suellen Reis</p>
+    </footer>
+
+
+    <!-- Script Connection -->
+    <script src="/script/books.js" defer></script>
+    
+</body>
+</html>
